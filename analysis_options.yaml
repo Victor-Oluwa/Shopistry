@@ -1,0 +1,35 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    - always_declare_return_types
+    - cancel_subscriptions
+    - close_sinks
+    - comment_references
+    - core_create_constructors_first
+    - lines_longer_than_80_chars
+    - package_api_docs
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_final_fields
+    - prefer_final_locals
+    - test_types_in_equals
+    - throw_in_finally
+    - unawaited_futures
+    - unnecessary_brace_in_string_interps
+    - unnecessary_getters_setters
+    - unnecessary_lambdas
+    - unnecessary_null_aware_assignments
+    - unnecessary_statements
+    - unnecessary_this
+    - use_super_parameters
+
+analyzer:
+  exclude:
+    - "lib/l10n/**"
+    - "**.g.dart"
+    - "**.freezed.dart"
+  errors:
+    todo: info
+    unused_local_variable: warning
+    invalid_annotation_target: ignore

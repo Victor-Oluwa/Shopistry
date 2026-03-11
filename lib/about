@@ -1,0 +1,21 @@
+We are going to build a **furniture e-commerce mobile application called Shopistry**. The goal of this project is to demonstrate **professional Flutter architecture and clean, maintainable code** that reflects real-world production standards.
+
+The application will be developed using **Clean Architecture**, separating the project into three clear layers: **presentation, domain, and data**. Each layer will have a distinct responsibility, making the codebase easier to maintain, test, and expand in the future. This structure ensures the application can scale smoothly as additional features or services are introduced.
+
+For state management, the project will use **Bloc** to handle events and state transitions in a predictable and structured manner. **Riverpod** will be used for dependency injection and for providing shared services across the application. This combination keeps components loosely coupled while maintaining a clear and organized flow of data.
+
+To encourage safer and more expressive error handling, the project will incorporate **fpdart**. This enables the use of functional programming constructs such as `Either` to manage success and failure states, reducing reliance on traditional exception handling patterns and making the logic easier to reason about.
+
+To ensure the application works consistently across different device sizes, **ScreenUtil** will be used to support responsive layout scaling.
+
+The application will use a **single theme called Taupical**. This theme will consist of **different shades of taupe and grey**, and it will serve as the unified visual foundation of the app. In addition, the project will include a **robust text theme class**, implemented with the **Google Fonts package**, to maintain consistent typography across the entire application.
+
+Although the application will not connect to a real backend service, it will include **realistic and comprehensive demo data** that reflects the structure and behavior of a real e-commerce system. This allows the app to behave like a complete product during development and demonstration.
+
+At the same time, the project will be structured **as if a real backend already exists**. All backend-related operations—such as retrieving products, loading categories, managing the cart, handling wishlists, and processing orders—will be defined through **repositories, data sources, and use cases** within the architecture.
+
+These backend functions will be fully written and integrated into the system, but their implementations will use **mocked or locally generated data** instead of real API calls. This approach ensures that when a backend service is eventually introduced, the integration process will simply involve replacing the mock implementations with real network requests.
+
+The application will include key e-commerce capabilities such as product browsing, category organization, search functionality, wishlist management, cart operations, and a simulated checkout process.
+
+Overall, Shopistry will demonstrate how to build a **structured, scalable Flutter application** that follows solid architectural principles, applies functional programming practices, and mirrors the workflow of a real-world production project while remaining ready for future backend integration.
